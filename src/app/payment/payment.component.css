@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #dee2e6; /* Gray border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+}
+
+/* Select and input styling */
+select.form-control,
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 4px;
+    background-color: #ffffff; /* White background */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075); /* Light inner shadow */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9; /* Darker shade on hover */
+    border-color: #0062cc;
+}
+
+/* Form validation styling */
+.ng-invalid.ng-touched {
+    border-color: #dc3545 !important; /* Red border for invalid fields */
+}

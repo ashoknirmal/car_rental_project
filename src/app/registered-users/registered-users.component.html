@@ -1,0 +1,34 @@
+<!-- Add Bootstrap CSS CDN link in your index.html -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Registered Users</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Pick-up Date</th>
+        <th>Drop-off Date</th>
+        <th>Pick-up Place</th>
+        <th>Drop-off Place</th>
+        <th>Car</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.customerName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td>{{ user.address }}</td>
+        <td>{{ user.pickupDate }}</td>
+        <td>{{ user.dropoffDate }}</td>
+        <td>{{ user.pickupPlace }}</td>
+        <td>{{ user.dropoffPlace }}</td>
+        <td>{{ user.car.vehicleName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

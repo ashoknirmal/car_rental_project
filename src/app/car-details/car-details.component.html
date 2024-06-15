@@ -1,0 +1,13 @@
+<div *ngIf="car">
+  <h2>{{ car.vehicleName }} Details</h2>
+  <div><span>Model: </span>{{ car.vehicleModel }}</div>
+  <div><span>Address: </span>{{ car.address }}</div>
+  <div><span>Phone Number: </span>{{ car.phoneNumber }}</div>
+  <div><span>CNIC: </span>{{ car.cnic }}</div>
+  <div><span>Production Year: </span>{{ car.productionYear }}</div>
+  <div><span>Price Per Day: </span>{{ car.pricePerDay }}</div>
+  <div><span>Registration Number: </span>{{ car.registrationNumber }}</div>
+  <div><span>Chassis Number: </span>{{ car.chassisNumber }}</div>
+  <div><span>Image: </span><img [src]="car.image" alt="Car Image" width="200"></div>
+  <button (click)="goBack()">Back</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>eCart Management</h2>
+    <div *ngIf="items.length > 0; else noItems">
+      <ul>
+        <li *ngFor="let item of items">
+          {{ item.name }} - {{ item.price }}
+          <button (click)="removeItem(item)">Remove</button>
+        </li>
+      </ul>
+      <div>Total: {{ getTotal() }}</div>
+    </div>
+    <ng-template #noItems>
+      <p>No items in the cart.</p>
+    </ng-template>
+  </div>
+  

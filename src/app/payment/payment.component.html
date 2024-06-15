@@ -1,0 +1,51 @@
+<div class="container mt-4">
+    <div class="payment-form">
+        <h2>Payment</h2>
+        <!-- Add Bootstrap CSS CDN link in your index.html -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method *</label>
+                <select id="paymentMethod" formControlName="paymentMethod">
+                    <option value="creditCard">Credit Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ccType">CC Type *</label>
+                <select id="ccType" formControlName="ccType">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ccNumber">CC Number *</label>
+                <input type="text" id="ccNumber" formControlName="ccNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expMonth">Expiration Date *</label>
+                <div class="expiration-date">
+                    <select id="expMonth" formControlName="expMonth" required>
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+                    <select id="expYear" formControlName="expYear" required>
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ccSecurityCode">CC Security Code *</label>
+                <input type="text" id="ccSecurityCode" formControlName="ccSecurityCode" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Checkout</button>
+        </form>
+    </div>
+</div>

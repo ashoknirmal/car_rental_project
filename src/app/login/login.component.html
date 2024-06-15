@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="title">Car Login</h2>
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="input-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit" class="btn">Login</button><br>
+  </form><br>
+  <button (click)="navigateToCreateAccount()" class="btn">Create Account</button>
+</div>

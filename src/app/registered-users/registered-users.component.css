@@ -1,0 +1,39 @@
+/* registered-users.component.css */
+
+/* Center the table heading */
+.table thead th {
+    text-align: center;
+  }
+  
+  /* Center align table cells */
+  .table tbody td {
+    text-align: center;
+  }
+  
+  /* Add padding to table cells */
+  .table tbody td {
+    padding: 8px;
+  }
+  
+  /* Responsive table styling */
+  @media (max-width: 768px) {
+    .table {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+  }
+  
+  /* Custom styling for table borders */
+  .table-bordered {
+    border: 1px solid #dee2e6; /* Default Bootstrap border color */
+  }
+  
+  /* Alternate row background color */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  /* Hover effect on table rows */
+  .table tbody tr:hover {
+    background-color: #e9ecef; /* Lighter gray background on hover */
+  }
+  

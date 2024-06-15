@@ -1,0 +1,30 @@
+/* Responsive CSS enhancements */
+
+/* Container padding */
+.container {
+  padding: 20px;
+}
+
+/* Form inputs */
+.form-control {
+  margin-bottom: 10px; /* Spacing between form inputs */
+}
+
+/* Table responsiveness */
+.table {
+  margin-top: 20px;
+}
+
+/* Button spacing */
+.btn {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}

@@ -1,0 +1,36 @@
+/* apply-for-car.component.css */
+
+/* Center align form elements */
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .btn-block {
+    margin-top: 10px;
+  }
+  
+  /* Error message styling for invalid inputs */
+  .invalid-feedback {
+    display: block;
+    color: #dc3545; /* Bootstrap's error color */
+    margin-top: 5px;
+  }
+  
+  /* Custom styling for form fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da; /* Bootstrap's default border color */
+    border-radius: 4px;
+  }
+  
+  /* Optional: Adjust form field sizes for responsiveness */
+  @media (max-width: 768px) {
+    .form-control {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
